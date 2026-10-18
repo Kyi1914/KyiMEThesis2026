@@ -1,0 +1,21 @@
+# Python 3.11.9 was used for the paper runs.
+# Versions are not yet pinned: run `pip freeze > requirements.txt` in the
+# environment that produced the results and replace this list.
+pandas
+openpyxl
+numpy
+scipy
+matplotlib
+python-dotenv
+pdfplumber
+rdflib
+neo4j
+sentence-transformers
+faiss-cpu
+langchain
+langchain-community
+langchain-text-splitters
+langchain-openai
+langchain-ollama
+langchain-neo4j
+ragas
