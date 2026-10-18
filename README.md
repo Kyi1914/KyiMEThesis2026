@@ -30,7 +30,7 @@ KyiMEThesis2026/
 │   ├── data/                                  ★ benchmark + every result file the paper uses
 │   ├── diagram/                               figures and architecture diagrams
 │   ├── Others/                                ontology design deck
-│   └── Phase 2 / Phase 3 folders              working copies (see §6)
+│   └── Phase 3 - Evaluation/results/          early manual evaluation (see §6)
 └── image/ontology.graph
 ```
 
@@ -90,8 +90,9 @@ Tables 1–3 and §5.1 is computed from the four files below.
 | Table 1: median latency 2.12 s / 4.35 s | phase-4 `latency comparison` | `verify_paper_tables.py` |
 | Table 2, §5.1 (29 graph / 6 fallback, 82.9 %, 41 %) | phase-4 `data` → `kgrag_mode` | `verify_paper_tables.py` |
 | Table 3 | benchmark `question_type` joined with the phase-4 citation and latency sheets | `verify_paper_tables.py`; figures from `chapter4_type_category_charts.ipynb` |
-| Figure: RAGAS bar chart | `docs/diagram/fig_ragas_comparison.png` | `app/4. additional - figures/import matplotlib.pyplot as plt.pyplot as plt.py` |
+| Figure: RAGAS bar chart | `docs/diagram/fig_ragas_comparison.png` | `app/4. additional - figures/fig_ragas_comparison.py` |
 | Figure: cross-system comparators | `docs/diagram/fig_cross_system.png` | `app/4. additional - figures/fig_cross_system.py` |
+| Figure: citation recall vs precision | `fig_citation_comparison.png` | `app/4. additional - figures/fig_citation_comparison.py` |
 | Figures: by type / by category | `docs/diagram/fig_type_breakdown.png`, `fig_category_breakdown.png` | `app/4. additional - figures/chapter4_type_category_charts.ipynb` |
 | Figure 1 (ontology top level) | `image/ontology.graph`, `docs/Others/PDPA_Ontology_Design.pptx.pdf` | Protégé |
 | Figure 2 (KG-RAG pipeline) | `docs/diagram/diagram-export-*.png`, `offline_kg_construction.png` | draw.io |
@@ -101,7 +102,7 @@ Tables 1–3 and §5.1 is computed from the four files below.
 | System | Raw run | Evaluation input (RAGAS) |
 |---|---|---|
 | V-RAG | `app/2.1 VectorRAG/vector_rag_results_vector_prompt_v1_20260630_151417.xlsx` (run of 30 Jun 2026) | `docs/data/phase 3 - vectorRAG_eval_ready.xlsx` (identical answers and contexts) |
-| KG-RAG | `docs/Phase 2 - SystemImplementation - Vector RAG/p2 - result - graphRAG_results_prompt4_27062026_manual.xlsx` | `docs/data/phase 3 - graphRAG_eval_ready.xlsx` (identical answers and modes) |
+| KG-RAG | `docs/data/p2 - result - graphRAG_results_prompt4_27062026_manual.xlsx` | `docs/data/phase 3 - graphRAG_eval_ready.xlsx` (identical answers and modes) |
 
 **The KG-RAG file is a composite of two runs of the same pipeline and prompt
 (`prompt4`):**
@@ -194,8 +195,6 @@ retrieved context is empty, the answer prompt returns the fixed refusal
 
 | Path | What it is |
 |---|---|
-| `docs/Phase 2 - …/vectorRAG_eval_ready.xlsx`, `graphRAG_eval_ready.xlsx`; `docs/Phase 3 - Evaluation/data/*` | identical copies of the eval-ready files in `docs/data/` |
-| `docs/data/phase 4 - pdpa_qa_dataset_for_analysis.xlsx` | identical copy of `pdpa_qa_dataset.xlsx` |
 | `docs/Phase 3 - Evaluation/results/Manual Eval -*.xlsx` | early manual context precision/recall (pre-RAGAS) |
 | `app/3. Evaluation/archived - not used/` | superseded evaluation notebooks |
 | `app/2.2 KGRAG/promptTemplate/prompt1–3.py` | earlier prompt iterations |

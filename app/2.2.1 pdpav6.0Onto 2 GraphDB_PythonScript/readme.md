@@ -54,7 +54,7 @@ python build_pdpa_graph.py \
   --pdf pdpa_Extract113.pdf \
   --uri bolt://localhost:7687 \
   --user neo4j \
-  --password 11111111 \
+  --password YOUR_PASSWORD \
   --wipe --no-embeddings
 ```
 ```
@@ -63,7 +63,7 @@ python build_pdpa_graph.py `
   --pdf pdpa_Extract113.pdf `
   --uri bolt://localhost:7687 `
   --user neo4j `
-  --password 11111111 `
+  --password YOUR_PASSWORD `
   --wipe --no-embeddings
   ```
 
@@ -88,7 +88,7 @@ python build_pdpa_graph.py `
   --pdf pdpa_Extract113.pdf `
   --uri bolt://localhost:7687 `
   --user neo4j `
-  --password 11111111 `
+  --password YOUR_PASSWORD `
   --wipe
   ```
 
