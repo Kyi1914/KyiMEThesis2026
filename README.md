@@ -24,7 +24,7 @@ Three released resources, plus the two systems evaluated on them:
 
 | Resource | Path | Description |
 |---|---|---|
-| PDPA ontology | `PATH/TO/pdpav6.ttl` | OWL 2 DL, Turtle. 85 classes, 35 object properties, 80 named individuals, 1,194 triples, covering Sections 1–29 |
+| PDPA ontology | `app/2.2 KGRAG/2.2.1/pdpav6.ttl` | OWL 2 DL, Turtle. 85 classes, 35 object properties, 80 named individuals, 1,194 triples, covering Sections 1–29 |
 | Knowledge graph build script | `PATH/TO/build_graph.py` | Materialises the ontology plus statutory text into Neo4j: 150 nodes, 265 relationships |
 | QA benchmark | `docs/data/PATH/TO/benchmark_35.json` | 35 questions with reference answers, gold section citations, theme and question type |
 
