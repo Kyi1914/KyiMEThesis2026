@@ -25,14 +25,14 @@ Three released resources, plus the two systems evaluated on them:
 | Resource | Path | Description |
 |---|---|---|
 | PDPA ontology | `app/2.2 KGRAG/2.2.1/pdpav6.ttl` | OWL 2 DL, Turtle. 85 classes, 35 object properties, 80 named individuals, 1,194 triples, covering Sections 1–29 |
-| Knowledge graph build script | `PATH/TO/build_graph.py` | Materialises the ontology plus statutory text into Neo4j: 150 nodes, 265 relationships |
-| QA benchmark | `docs/data/PATH/TO/benchmark_35.json` | 35 questions with reference answers, gold section citations, theme and question type |
+| Knowledge graph build script | `app/2.2 KGRAG/2.2.1/build_pdpa_graph.py` | Materialises the ontology plus statutory text into Neo4j: 150 nodes, 265 relationships |
+| QA benchmark | `docs/data/pdpa_qa_dataset.xlsx` | 35 questions with reference answers (groundTruth), gold section citations, category and question type |
 
 | Code | Path |
 |---|---|
-| KG-RAG (graph-first hybrid) | `app/PATH/TO/kg_rag.ipynb` |
-| V-RAG (section-aware vector baseline) | `app/PATH/TO/v_rag.ipynb` |
-| Prompts, verbatim | `PATH/TO/prompts/` |
+| KG-RAG (graph-first hybrid) | `app/2.2 KGRAG/graphRag_35q_hybrid_gpt4omini_prompt4 v2.1.ipynb` |
+| V-RAG (section-aware vector baseline) | `app/2.1 VectorRAG/vectorRag_29q_gpt4omini_faiss_vector_prompt_v1.ipynb` |
+| Prompts, verbatim | `PATH/TO/vector_prompt_v1.py/` |
 | RAGAS evaluation harness | `PATH/TO/evaluate_ragas.py` |
 | Citation scoring, retrieval-path analysis, significance tests | `PATH/TO/path_analysis.py` |
 

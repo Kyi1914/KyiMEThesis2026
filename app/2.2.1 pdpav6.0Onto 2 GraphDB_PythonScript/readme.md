@@ -1,6 +1,6 @@
-### The script runs on your machine (not inside Neo4j) and talks to your running Neo4j over Bolt.
+### The script runs on local machine (not inside Neo4j) and talks to running Neo4j over Bolt.
 
-Here's the end-to-end. The script runs on your machine (not inside Neo4j) and talks to your running Neo4j over Bolt.
+Here's the end-to-end. The script runs on the machine (not inside Neo4j) and talks to the running Neo4j over Bolt.
 
 **1. Prerequisites**
 
@@ -110,4 +110,4 @@ SHOW INDEXES;
 
 A couple of things to keep in mind. `--wipe` does `DETACH DELETE` on the **entire** target database, so point it at a fresh/dedicated DB rather than the one holding your n10s import you want to keep — or use `--database NAME` to target a separate one. And re-runs without `--wipe` are safe and idempotent (everything MERGEs on `Section.number` / `Concept.name`), so after editing `pdpav6.ttl` you can just re-run to update.
 
-If the dry run shows missing section text or a connection error, paste me the console output and I'll pinpoint it.
+
